@@ -7,7 +7,6 @@
 		<!--  Database connection settings -->
 		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
         <property name="hibernate.connection.driver_class">sun.jdbc.odbc.JdbcOdbcDriver</property>
-<!--         <property name="hibernate.connection.url">jdbc:odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\asus\Desktop\encontro.mdb</property> -->
 		<property name="hibernate.connection.url">jdbc:odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:/Users/asus/Desktop/encontro.mdb</property>
         
         <property name="connection.username"></property>
