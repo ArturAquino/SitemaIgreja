@@ -13,6 +13,30 @@ public abstract class Pessoa {
 	private Date dataNascimento;
 	private Date dataCasamento;
 	private Sexo sexo;
+	email
+	nomeMae
+	nomePai
+	iEscolaridade
+	i_cidade
+	i_logradouro
+	numero
+	complemento
+	i_bairro
+	cep
+	telefone
+	celular
+	batizado
+	eucaristia
+	crismando
+	crisma
+	tel_responsavel
+	cel_responsavel
+	observacoes
+	responsavel
+	uso_medicamento
+	restricao_alimentar
+
+	
 	
 	public String getNome() {
 		return nome;
