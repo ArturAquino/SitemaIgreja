@@ -13,15 +13,15 @@ public abstract class Pessoa {
 	private Date dataNascimento;
 	private Date dataCasamento;
 	private Sexo sexo;
-	email
-	nomeMae
-	nomePai
-	iEscolaridade
-	i_cidade
-	i_logradouro
-	numero
+	private String email;
+	private String nomeMae;
+	private String nomePai;
+	????iEscolaridade;
+	iCidade;
+	iLogradouro
+	private int numero;
 	complemento
-	i_bairro
+	iBairro
 	cep
 	telefone
 	celular
@@ -29,12 +29,12 @@ public abstract class Pessoa {
 	eucaristia
 	crismando
 	crisma
-	tel_responsavel
-	cel_responsavel
+	telResponsavel
+	celResponsavel
 	observacoes
 	responsavel
-	uso_medicamento
-	restricao_alimentar
+	usoMedicamento
+	restricaoAlimentar
 
 	
 	
