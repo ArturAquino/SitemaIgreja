@@ -13,28 +13,29 @@ public abstract class Pessoa {
 	private Date dataNascimento;
 	private Date dataCasamento;
 	private Sexo sexo;
+	
 	private String email;
 	private String nomeMae;
 	private String nomePai;
 	????iEscolaridade;
-	iCidade;
-	iLogradouro
+	????iCidade;
+	????iLogradouro
 	private int numero;
-	complemento
-	iBairro
-	cep
-	telefone
-	celular
-	batizado
-	eucaristia
-	crismando
-	crisma
-	telResponsavel
-	celResponsavel
-	observacoes
-	responsavel
-	usoMedicamento
-	restricaoAlimentar
+	private String complemento;
+	????iBairro
+	private String cep;
+	private String telefone;
+	private String celular;
+	private String batizado;
+	private String eucaristia;
+	private String crismando;
+	private String crisma;
+	private String telResponsavel;
+	private String celResponsavel;
+	private String observacoes;
+	private String responsavel;
+	private String usoMedicamento;
+	private String restricaoAlimentar;
 
 	
 	
