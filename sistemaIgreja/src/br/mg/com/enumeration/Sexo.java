@@ -10,4 +10,5 @@ package br.mg.com.enumeration;
 public enum Sexo {
 	F, //Feminino
 	M; //Masculino
+	
 }

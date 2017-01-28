@@ -1,4 +1,4 @@
-package sistemaIgreja;
+package br.mg.com.classe;
 
 import java.util.Date;
 
@@ -10,6 +10,6 @@ public abstract class Pessoa {
 	private Long estadoCivil;
 	private Date dataNascimento;
 	private Date dataCasamento;
-	private String sexo;
+	private Sexo sexo;
 
 }
