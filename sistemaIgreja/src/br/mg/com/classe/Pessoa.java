@@ -16,7 +16,7 @@ public abstract class Pessoa {
 	private String email;
 	private String nomeMae;
 	private String nomePai;
-	????iEscolaridade;
+	/*????iEscolaridade;
 	iCidade;
 	iLogradouro
 	private int numero;
@@ -34,7 +34,7 @@ public abstract class Pessoa {
 	observacoes
 	responsavel
 	usoMedicamento
-	restricaoAlimentar
+	restricaoAlimentar*/
 
 	
 	
@@ -42,6 +42,30 @@ public abstract class Pessoa {
 		return nome;
 	}
 	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNomeMae() {
+		return nomeMae;
+	}
+
+	public void setNomeMae(String nomeMae) {
+		this.nomeMae = nomeMae;
+	}
+
+	public String getNomePai() {
+		return nomePai;
+	}
+
+	public void setNomePai(String nomePai) {
+		this.nomePai = nomePai;
+	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
