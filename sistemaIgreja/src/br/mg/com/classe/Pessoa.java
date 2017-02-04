@@ -17,42 +17,13 @@ public abstract class Pessoa {
 	private String email;
 	private String nomeMae;
 	private String nomePai;
-<<<<<<< HEAD
 	
 	private String Escolaridade;
 	private String Cidade;
 	private String Logradouro;
 	private String Bairro;
 	
-=======
-<<<<<<< HEAD
-	/*????iEscolaridade;
-	iCidade;
-	iLogradouro
-=======
-	????iEscolaridade;
-	????iCidade;
-	????iLogradouro
->>>>>>> branch 'master' of https://github.com/ArturAquino/SitemaIgreja
->>>>>>> branch 'master' of https://github.com/ArturAquino/SitemaIgreja
 	private int numero;
-<<<<<<< HEAD
-	complemento
-	iBairro
-	cep
-	telefone
-	celular
-	batizado
-	eucaristia
-	crismando
-	crisma
-	telResponsavel
-	celResponsavel
-	observacoes
-	responsavel
-	usoMedicamento
-	restricaoAlimentar*/
-=======
 	private String complemento;
 	private String cep;
 	private String telefone;
@@ -67,37 +38,12 @@ public abstract class Pessoa {
 	private String responsavel;
 	private String usoMedicamento;
 	private String restricaoAlimentar;
->>>>>>> branch 'master' of https://github.com/ArturAquino/SitemaIgreja
 
 	
 	public String getNome() {
 		return nome;
 	}
 	
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getNomeMae() {
-		return nomeMae;
-	}
-
-	public void setNomeMae(String nomeMae) {
-		this.nomeMae = nomeMae;
-	}
-
-	public String getNomePai() {
-		return nomePai;
-	}
-
-	public void setNomePai(String nomePai) {
-		this.nomePai = nomePai;
-	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
