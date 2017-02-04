@@ -17,12 +17,14 @@ public abstract class Pessoa {
 	private String email;
 	private String nomeMae;
 	private String nomePai;
-	????iEscolaridade;
-	????iCidade;
-	????iLogradouro
+	
+	private String Escolaridade;
+	private String Cidade;
+	private String Logradouro;
+	private String Bairro;
+	
 	private int numero;
 	private String complemento;
-	????iBairro
 	private String cep;
 	private String telefone;
 	private String celular;
@@ -37,7 +39,6 @@ public abstract class Pessoa {
 	private String usoMedicamento;
 	private String restricaoAlimentar;
 
-	
 	
 	public String getNome() {
 		return nome;
@@ -93,6 +94,182 @@ public abstract class Pessoa {
 	
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNomeMae() {
+		return nomeMae;
+	}
+
+	public void setNomeMae(String nomeMae) {
+		this.nomeMae = nomeMae;
+	}
+
+	public String getNomePai() {
+		return nomePai;
+	}
+
+	public void setNomePai(String nomePai) {
+		this.nomePai = nomePai;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getComplemento() {
+		return complemento;
+	}
+
+	public void setComplemento(String complemento) {
+		this.complemento = complemento;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getBatizado() {
+		return batizado;
+	}
+
+	public void setBatizado(String batizado) {
+		this.batizado = batizado;
+	}
+
+	public String getEucaristia() {
+		return eucaristia;
+	}
+
+	public void setEucaristia(String eucaristia) {
+		this.eucaristia = eucaristia;
+	}
+
+	public String getCrismando() {
+		return crismando;
+	}
+
+	public void setCrismando(String crismando) {
+		this.crismando = crismando;
+	}
+
+	public String getCrisma() {
+		return crisma;
+	}
+
+	public void setCrisma(String crisma) {
+		this.crisma = crisma;
+	}
+
+	public String getTelResponsavel() {
+		return telResponsavel;
+	}
+
+	public void setTelResponsavel(String telResponsavel) {
+		this.telResponsavel = telResponsavel;
+	}
+
+	public String getCelResponsavel() {
+		return celResponsavel;
+	}
+
+	public void setCelResponsavel(String celResponsavel) {
+		this.celResponsavel = celResponsavel;
+	}
+
+	public String getObservacoes() {
+		return observacoes;
+	}
+
+	public void setObservacoes(String observacoes) {
+		this.observacoes = observacoes;
+	}
+
+	public String getResponsavel() {
+		return responsavel;
+	}
+
+	public void setResponsavel(String responsavel) {
+		this.responsavel = responsavel;
+	}
+
+	public String getUsoMedicamento() {
+		return usoMedicamento;
+	}
+
+	public void setUsoMedicamento(String usoMedicamento) {
+		this.usoMedicamento = usoMedicamento;
+	}
+
+	public String getRestricaoAlimentar() {
+		return restricaoAlimentar;
+	}
+
+	public void setRestricaoAlimentar(String restricaoAlimentar) {
+		this.restricaoAlimentar = restricaoAlimentar;
+	}
+
+	public String getEscolaridade() {
+		return Escolaridade;
+	}
+
+	public void setEscolaridade(String escolaridade) {
+		Escolaridade = escolaridade;
+	}
+
+	public String getCidade() {
+		return Cidade;
+	}
+
+	public void setCidade(String cidade) {
+		Cidade = cidade;
+	}
+
+	public String getLogradouro() {
+		return Logradouro;
+	}
+
+	public void setLogradouro(String logradouro) {
+		Logradouro = logradouro;
+	}
+
+	public String getBairro() {
+		return Bairro;
+	}
+
+	public void setBairro(String bairro) {
+		Bairro = bairro;
 	}
 	
 
