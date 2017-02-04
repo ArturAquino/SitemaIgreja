@@ -30,9 +30,9 @@ public class CriaDB {
 			/*Comando para inserção de dados em uma tabela*/
 			/*con.createStatement().execute(""
 					+ "INSERT INTO TESTE(NOME, SEXO, IDADE)"
-					+ "		VALUES('ARTUR', 'M', 26)");
+					+ "		VALUES('ADEMIR', 'M', 29)");
 			
-			System.out.println("Tabela criada com sucesso!!!");*/
+			//System.out.println("Tabela criada com sucesso!!!");*/
 			
 			Statement statemant = con.createStatement();
 			
