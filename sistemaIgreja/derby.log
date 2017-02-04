@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-Sat Feb 04 13:52:38 BRST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015a-09d3-c782-00000726eca0 
+Sat Feb 04 14:22:38 BRST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015a-09ef-3c54-000007067958 
 on database directory C:\Users\asus\git\sistemaIgreja\sistemaIgreja\sistemaIgrejaDB with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
-Loaded from file:/C:/Users/asus/git/sistemaIgreja/sistemaIgreja/lib/derby.jar
+Loaded from file:/C:/Users/asus/Desktop/Apache%20Derby%20DB/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_121-b13
 user.dir=C:\Users\asus\git\sistemaIgreja\sistemaIgreja
