@@ -13,13 +13,21 @@ public abstract class Pessoa {
 	private Date dataNascimento;
 	private Date dataCasamento;
 	private Sexo sexo;
+	
 	private String email;
 	private String nomeMae;
 	private String nomePai;
+<<<<<<< HEAD
 	/*????iEscolaridade;
 	iCidade;
 	iLogradouro
+=======
+	????iEscolaridade;
+	????iCidade;
+	????iLogradouro
+>>>>>>> branch 'master' of https://github.com/ArturAquino/SitemaIgreja
 	private int numero;
+<<<<<<< HEAD
 	complemento
 	iBairro
 	cep
@@ -35,6 +43,23 @@ public abstract class Pessoa {
 	responsavel
 	usoMedicamento
 	restricaoAlimentar*/
+=======
+	private String complemento;
+	????iBairro
+	private String cep;
+	private String telefone;
+	private String celular;
+	private String batizado;
+	private String eucaristia;
+	private String crismando;
+	private String crisma;
+	private String telResponsavel;
+	private String celResponsavel;
+	private String observacoes;
+	private String responsavel;
+	private String usoMedicamento;
+	private String restricaoAlimentar;
+>>>>>>> branch 'master' of https://github.com/ArturAquino/SitemaIgreja
 
 	
 	
