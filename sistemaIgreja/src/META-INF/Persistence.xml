@@ -5,18 +5,22 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/x
 
 <persistence-unit name="Derby" transaction-type="RESOURCE_LOCAL">
 
-<properties>
-<property name="javax.persistence.jdbc.url" value="jdbc:derby:sistemaIgrejaDB;create=true"/>
 
-<!--<property name="javax.persistence.jdbc.user" value="postgres"/>
-<property name="javax.persistence.jdbc.password" value="699"/>-->
+<properties>
+<property name="javax.persistence.jdbc.url" value="jdbc:derby:/sistemaIgrejaDB;create=true"/>
+
+<property name="javax.persistence.jdbc.user" value="user"/>
+<property name="javax.persistence.jdbc.password" value="user"/>
+<property name="cache.provider_class" value = "org.hibernate.cache.NoCacheProvider"/>
 
 <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
 
 <!-- validate | update | create | create-drop -->
 <property name="hibernate.hbm2ddl.auto" value="update"/>
-		   <property name="hibernate.dialect" value="org.hibernate.dialect.ExtendedDerbyDialect" />
+		   <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect" />
 </properties>
+
+
 
 </persistence-unit>
 
