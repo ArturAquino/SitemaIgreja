@@ -9,6 +9,7 @@ import org.hibernate.cfg.Configuration;
 
 import br.mg.com.classe.Cliente;
 
+@SuppressWarnings("deprecation")
 public class CriaDB {
 	
 //	private static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
