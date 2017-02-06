@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-Sat Feb 04 14:22:38 BRST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015a-09ef-3c54-000007067958 
-on database directory C:\Users\asus\git\sistemaIgreja\sistemaIgreja\sistemaIgrejaDB with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
-Loaded from file:/C:/Users/asus/Desktop/Apache%20Derby%20DB/derby.jar
+Mon Feb 06 12:42:20 BRST 2017:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instância a816c00e-015a-13e0-2172-000005d19670
+no diretório de banco de dados C:\Users\asus\git\sistemaIgreja\sistemaIgreja\SistemaIgrejaBD 
+
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_121-b13
 user.dir=C:\Users\asus\git\sistemaIgreja\sistemaIgreja
@@ -10,4 +10,4 @@ os.name=Windows 10
 os.arch=amd64
 os.version=10.0
 derby.system.home=null
-Database Class Loader started - derby.database.classpath=''
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
