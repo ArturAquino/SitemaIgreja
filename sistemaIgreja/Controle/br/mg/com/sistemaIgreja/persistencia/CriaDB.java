@@ -19,32 +19,31 @@ public class CriaDB {
 	
 	public static void main(String[] args) {
 		
-		Cliente cliente = new Cliente();
-		cliente.setNome("Pedro Bino");
-		cliente.setIdade(35);
-		cliente.setSexo("M");
+		new CriaDB().insert("Valderi", 26, "M");
+        
+    }
+	
+	public void insert(String nome, int idade, String sexo){
 		
-		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-	    Session session = sessionFactory.openSession();
-	        
+		SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		
+		Cliente cliente = new Cliente();
+		cliente.setNome(nome);
+		cliente.setIdade(idade);
+		cliente.setSexo(sexo);
+	    
+		/*Inicia uma transação no BD*/
         session.beginTransaction();
         session.save(cliente);
         session.getTransaction().commit();
-        
-        session = sessionFactory.openSession();
-        session.beginTransaction();
-        Query query = session.createQuery("from Cliente");
-        
-        List<Cliente> list = query.list();
-        
-        for(Cliente user1:list){
-        	System.out.println();
-            System.out.println(user1.getNome());
-        }
-        
-        session.getTransaction().commit();
-        
-    }
-
+        session.close();
+        sessionFactory.close();
+		
+	}
+	
+	public void select(){
+		
+	}
 
 }
