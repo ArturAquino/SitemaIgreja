@@ -31,6 +31,7 @@
         <property name="hbm2ddl.auto">update</property>
 
         <mapping class="br.mg.com.classe.Cliente" />
+        <mapping class="br.mg.com.classe.Pessoa" />
 
     </session-factory>
 
