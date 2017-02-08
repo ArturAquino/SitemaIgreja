@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import br.mg.com.enumeration.Escolaridade;
+import br.mg.com.enumeration.EstadoCivil;
+import br.mg.com.enumeration.PlcSimNao;
 import br.mg.com.enumeration.Sexo;
 
 @Entity
@@ -15,36 +18,49 @@ public abstract class Pessoa {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long codigo;
+	
 	private String nome;
 	private String nomeQuadrante;
 	private String nomeCracha;
-	private Long estadoCivil;
+	private EstadoCivil estadoCivil;
 	private Date dataNascimento;
 	private Date dataCasamento;
 	private Sexo sexo;
 	
-	private String email;
 	private String nomeMae;
 	private String nomePai;
 	
-	private String Escolaridade;
-	private String Cidade;
-	private String Logradouro;
-	private String Bairro;
+	/*Grau de escolaridade*/
+	private Escolaridade escolaridade;
 	
+	/*Endereço*/
+	private String cidade;
+	private String logradouro;
+	private String bairro;
 	private int numero;
 	private String complemento;
 	private String cep;
+	
+	/*Forma de contato*/
+	private String email;
 	private String telefone;
 	private String celular;
-	private String batizado;
-	private String eucaristia;
+	
+	/*Dados de batismo e crisma*/
+	private PlcSimNao batizado;
+	private PlcSimNao eucaristia;
+	
+	/*Tirar dúvida aqui*/
 	private String crismando;
 	private String crisma;
+	
+	/*Responsável*/
 	private String telResponsavel;
 	private String celResponsavel;
-	private String observacoes;
 	private String responsavel;
+	
+	/*Informações relevantes*/
+	private String observacoes;
 	private String usoMedicamento;
 	private String restricaoAlimentar;
 
@@ -73,11 +89,11 @@ public abstract class Pessoa {
 		this.nomeCracha = nomeCracha;
 	}
 	
-	public Long getEstadoCivil() {
+	public EstadoCivil getEstadoCivil() {
 		return estadoCivil;
 	}
 	
-	public void setEstadoCivil(Long estadoCivil) {
+	public void setEstadoCivil(EstadoCivil estadoCivil) {
 		this.estadoCivil = estadoCivil;
 	}
 	
@@ -169,19 +185,19 @@ public abstract class Pessoa {
 		this.celular = celular;
 	}
 
-	public String getBatizado() {
+	public PlcSimNao getBatizado() {
 		return batizado;
 	}
 
-	public void setBatizado(String batizado) {
+	public void setBatizado(PlcSimNao batizado) {
 		this.batizado = batizado;
 	}
 
-	public String getEucaristia() {
+	public PlcSimNao getEucaristia() {
 		return eucaristia;
 	}
 
-	public void setEucaristia(String eucaristia) {
+	public void setEucaristia(PlcSimNao eucaristia) {
 		this.eucaristia = eucaristia;
 	}
 
@@ -249,36 +265,36 @@ public abstract class Pessoa {
 		this.restricaoAlimentar = restricaoAlimentar;
 	}
 
-	public String getEscolaridade() {
-		return Escolaridade;
+	public Escolaridade getEscolaridade() {
+		return escolaridade;
 	}
 
-	public void setEscolaridade(String escolaridade) {
-		Escolaridade = escolaridade;
+	public void setEscolaridade(Escolaridade escolaridade) {
+		this.escolaridade = escolaridade;
 	}
 
 	public String getCidade() {
-		return Cidade;
+		return cidade;
 	}
 
 	public void setCidade(String cidade) {
-		Cidade = cidade;
+		this.cidade = cidade;
 	}
 
 	public String getLogradouro() {
-		return Logradouro;
+		return logradouro;
 	}
 
 	public void setLogradouro(String logradouro) {
-		Logradouro = logradouro;
+		this.logradouro = logradouro;
 	}
 
 	public String getBairro() {
-		return Bairro;
+		return bairro;
 	}
 
 	public void setBairro(String bairro) {
-		Bairro = bairro;
+		this.bairro = bairro;
 	}
 	
 
