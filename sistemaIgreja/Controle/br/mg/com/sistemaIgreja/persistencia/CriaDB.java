@@ -9,7 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import br.mg.com.classe.Cliente;
+import br.mg.com.sistemaIgreja.classe.Cliente;
 
 @SuppressWarnings("deprecation")
 public class CriaDB {

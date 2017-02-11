@@ -1,4 +1,4 @@
-package br.mg.com.enumeration;
+package br.mg.com.sistemaIgreja.enumeration;
 
 public enum EstadoCivil {
 	

@@ -1,4 +1,4 @@
-package br.mg.com.classe;
+package br.mg.com.sistemaIgreja.classe;
 
 import java.util.Date;
 
@@ -7,10 +7,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import br.mg.com.enumeration.Escolaridade;
-import br.mg.com.enumeration.EstadoCivil;
-import br.mg.com.enumeration.PlcSimNao;
-import br.mg.com.enumeration.Sexo;
+import br.mg.com.sistemaIgreja.enumeration.Escolaridade;
+import br.mg.com.sistemaIgreja.enumeration.EstadoCivil;
+import br.mg.com.sistemaIgreja.enumeration.PlcSimNao;
+import br.mg.com.sistemaIgreja.enumeration.Sexo;
 
 @Entity
 public abstract class Pessoa {

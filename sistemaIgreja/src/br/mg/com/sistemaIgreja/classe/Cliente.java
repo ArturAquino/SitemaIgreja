@@ -1,4 +1,4 @@
-package br.mg.com.classe;
+package br.mg.com.sistemaIgreja.classe;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
