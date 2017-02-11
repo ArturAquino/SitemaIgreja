@@ -1,22 +1,29 @@
 package br.mg.com.sistemaIgreja.cadastroPessoa;
 
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Combo;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.DateTime;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.wb.swt.SWTResourceManager;
-import org.eclipse.swt.widgets.Combo;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.DateTime;
-import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.ToolBar;
+import org.eclipse.wb.swt.SWTResourceManager;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import br.mg.com.sistemaIgreja.classe.Pessoa;
 
 public class CadastroPessoa {
 
@@ -36,6 +43,10 @@ public class CadastroPessoa {
 	private Text email;
 	private Text tel;
 	private Text cel;
+	private Text text;
+	private Text text_1;
+	private Text text_2;
+	private Text text_3;
 
 	/**
 	 * Launch the application.
@@ -60,6 +71,7 @@ public class CadastroPessoa {
 		createContents();
 		shlCadastro.open();
 		shlCadastro.layout();
+		
 		while (!shlCadastro.isDisposed()) {
 			if (!display.readAndDispatch()) {
 				display.sleep();
@@ -74,11 +86,12 @@ public class CadastroPessoa {
 		
 		shlCadastro = new Shell();
 		shlCadastro.setModified(true);
-		shlCadastro.setSize(692, 689);
+		shlCadastro.setSize(692, 762);
 		shlCadastro.setText("Cadastro");
 		shlCadastro.setLayout(new GridLayout(1, false));
 		
 		TabFolder tabFolder = new TabFolder(shlCadastro, SWT.NONE);
+		tabFolder.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
 		GridData gd_tabFolder = new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1);
 		gd_tabFolder.heightHint = 218;
 		tabFolder.setLayoutData(gd_tabFolder);
@@ -261,6 +274,39 @@ public class CadastroPessoa {
 		
 		cel = new Text(grpContato, SWT.BORDER);
 		cel.setBounds(102, 57, 101, 21);
+		
+		Group grpSituaoReligiosa = new Group(composite, SWT.NONE);
+		grpSituaoReligiosa.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
+		grpSituaoReligiosa.setText("Situa\u00E7\u00E3o Religiosa");
+		grpSituaoReligiosa.setBounds(10, 553, 638, 88);
+		
+		text = new Text(grpSituaoReligiosa, SWT.BORDER);
+		text.setBounds(69, 22, 167, 21);
+		
+		Label lblBatizado = new Label(grpSituaoReligiosa, SWT.NONE);
+		lblBatizado.setBounds(10, 25, 55, 15);
+		lblBatizado.setText("Batizado:");
+		
+		Label lblEucaristia = new Label(grpSituaoReligiosa, SWT.NONE);
+		lblEucaristia.setText("1\u00AA Eucaristia:");
+		lblEucaristia.setBounds(273, 25, 69, 15);
+		
+		text_1 = new Text(grpSituaoReligiosa, SWT.BORDER);
+		text_1.setBounds(348, 22, 167, 21);
+		
+		Label lblCrismado = new Label(grpSituaoReligiosa, SWT.NONE);
+		lblCrismado.setText("Crismado:");
+		lblCrismado.setBounds(10, 60, 55, 15);
+		
+		text_2 = new Text(grpSituaoReligiosa, SWT.BORDER);
+		text_2.setBounds(69, 57, 167, 21);
+		
+		Label lblCrisma = new Label(grpSituaoReligiosa, SWT.NONE);
+		lblCrisma.setText("Crisma:");
+		lblCrisma.setBounds(273, 60, 69, 15);
+		
+		text_3 = new Text(grpSituaoReligiosa, SWT.BORDER);
+		text_3.setBounds(348, 57, 167, 21);
 		
 		TabItem tbtmObservaes = new TabItem(tabFolder, SWT.NONE);
 		tbtmObservaes.setText("Observa\u00E7\u00F5es");

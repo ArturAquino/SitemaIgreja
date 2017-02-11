@@ -59,6 +59,7 @@ public class TelaPrincipal {
 		tltmNewItem.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				
 			}
 		});
 		tltmNewItem.setText("Cadastro de Pessoas");
