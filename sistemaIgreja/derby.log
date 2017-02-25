@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Mon Feb 06 18:26:19 BRST 2017:
- Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instância a816c00e-015a-151b-0f02-000005d164f8
-no diretório de banco de dados C:\Users\asus\git\sistemaIgreja\sistemaIgreja\SistemaIgrejaBD 
-
+Sat Feb 25 15:11:42 BRT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015a-7678-a35a-000000a46bc0 
+on database directory C:\Users\Valderi\git\SitemaIgreja\sistemaIgreja\SistemaIgrejaBD with class loader sun.misc.Launcher$AppClassLoader@1d16e93 
+Loaded from file:/C:/Users/Valderi/Desktop/eclipse/plugins/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_121-b13
-user.dir=C:\Users\asus\git\sistemaIgreja\sistemaIgreja
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
+java.runtime.version=1.8.0_111-b14
+user.dir=C:\Users\Valderi\git\SitemaIgreja\sistemaIgreja
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
 derby.system.home=null
-Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+Database Class Loader started - derby.database.classpath=''

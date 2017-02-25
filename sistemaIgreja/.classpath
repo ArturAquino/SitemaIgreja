@@ -5,5 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate_5.2.7"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Derby"/>
+	<classpathentry kind="lib" path="C:/Users/Valderi/Desktop/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.105.2.v20161122-0613.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

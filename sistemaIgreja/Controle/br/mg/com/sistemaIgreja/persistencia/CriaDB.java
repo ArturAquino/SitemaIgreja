@@ -2,14 +2,12 @@ package br.mg.com.sistemaIgreja.persistencia;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import br.mg.com.sistemaIgreja.classe.Cliente;
+import br.mg.com.sistemaIgreja.classe.Paroquia;
 
 @SuppressWarnings("deprecation")
 public class CriaDB {
@@ -21,24 +19,31 @@ public class CriaDB {
 	
 	public static void main(String[] args) {
 		
-		//new CriaDB().insert("Valderi", 26, "M");
+		//new CriaDB().insert("São Benedito", "Uberlândia", "Nsa Sra Graças", "República Piratini", 908, "Casa", "38402-028", "3222-9371");
 		new CriaDB().select();
         
     }
 	
-	public void insert(String nome, int idade, String sexo){
+	public void insert(String nome, String cidade, String bairro, String logradouro, 
+			           Integer numero, String complemento, String cep, String telefone){
 		
 		SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 		Session session = sessionFactory.openSession();
 		
-		Cliente cliente = new Cliente();
-		cliente.setNome(nome);
-		cliente.setIdade(idade);
-		cliente.setSexo(sexo);
+		Paroquia paroquia = new Paroquia();
+		paroquia.setNome(nome);
+		paroquia.setCidade(cidade);
+		paroquia.setBairro(bairro);
+		paroquia.setLogradouro(logradouro);
+		paroquia.setNumero(numero);
+		paroquia.setComplemento(complemento);
+		paroquia.setCep(cep);
+		paroquia.setTelefone(telefone);
+		
 	    
 		/*Inicia uma transação no BD*/
         session.beginTransaction();
-        session.save(cliente);
+        session.save(paroquia);
         session.getTransaction().commit();
         session.close();
         sessionFactory.close();
@@ -54,7 +59,7 @@ public class CriaDB {
 		/*Inicia uma transação no BD*/
         session.beginTransaction();
         
-        String sql = "SELECT nome FROM Cliente";
+        String sql = "SELECT nome FROM Paroquia";
         Query query = session.createQuery(sql);
         
         List<String> lista = query.getResultList();

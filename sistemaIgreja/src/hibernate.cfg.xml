@@ -30,7 +30,7 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="br.mg.com.sistemaIgreja.classe.Cliente" />
+        <mapping class="br.mg.com.sistemaIgreja.classe.Paroquia" />
         <mapping class="br.mg.com.sistemaIgreja.classe.Pessoa" />
 
     </session-factory>
