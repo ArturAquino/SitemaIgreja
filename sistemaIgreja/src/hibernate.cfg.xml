@@ -32,6 +32,7 @@
 
         <mapping class="br.mg.com.sistemaIgreja.classe.Paroquia" />
         <mapping class="br.mg.com.sistemaIgreja.classe.Pessoa" />
+        <mapping class="br.mg.com.sistemaIgreja.classe.Encontro" />
 
     </session-factory>
 
