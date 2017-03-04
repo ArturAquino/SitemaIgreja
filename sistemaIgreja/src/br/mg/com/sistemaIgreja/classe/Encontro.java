@@ -2,9 +2,18 @@ package br.mg.com.sistemaIgreja.classe;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public abstract class Encontro {
 	
-	private Long id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long codigo;
+	
 	private Paroquia paroquia;
 	private String nome;
 	private String Logradouro;
@@ -113,6 +122,14 @@ public abstract class Encontro {
 	
 	public void setDtMissaReencontro(Date dtMissaReencontro) {
 		this.dtMissaReencontro = dtMissaReencontro;
+	}
+
+	public final Paroquia getParoquia() {
+		return paroquia;
+	}
+
+	public final void setParoquia(Paroquia paroquia) {
+		this.paroquia = paroquia;
 	}
 
 }
